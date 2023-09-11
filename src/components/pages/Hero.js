@@ -3,6 +3,7 @@ import motoCross from "../../assest/img/motocross.jpg";
 import logo from "../../assest/img/logo.png";
 import { useNavigate } from "react-router-dom";
 
+
 function Hero() {
   const navigate = useNavigate();
 
