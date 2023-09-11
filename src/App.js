@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import NavBar from './components/NavBar';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
+import React from 'react';
+
+import { Routes, Route } from "react-router-dom";
+import './index.css';
+import Hero from './components/pages/Hero';
+import Home from './components/pages/Home'; 
+
 function App() {
   return (
     <div>
-      {/* <NavBar/> */}
-      <Hero/>
-      {/* <Footer/> */}
+        <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/home" element={<Home />} />
+        </Routes>
     </div>
   );
 }
