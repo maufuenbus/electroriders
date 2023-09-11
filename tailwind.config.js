@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"], // Cambia 'content' por 'purge'
+  purge: ['./src/**/*.{js,jsx,ts,tsx}',],
+  darkMode: false,
   theme: {
     extend: {},
   },
+  variants: {},
   plugins: [require('daisyui')],
-  daisyui: {
-    styled: true,
-  },
-}
+};
