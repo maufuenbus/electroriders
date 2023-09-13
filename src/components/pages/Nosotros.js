@@ -2,14 +2,14 @@ import React from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 
-function Home() {
+function Nosotros() {
   return (
     <>
     <div>
       <Header />
     </div>
     <div className="navbar bg-base-100">
-      <a className="btn btn-ghost normal-case text-xl">home</a>
+      <a className="btn btn-ghost normal-case text-xl">nosotros</a>
     </div>
     <div>
       <Footer />
@@ -18,4 +18,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Nosotros
