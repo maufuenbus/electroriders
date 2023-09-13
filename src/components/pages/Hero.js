@@ -1,6 +1,6 @@
 import React from "react";
-import motoCross from "../../assest/img/motocross.jpg";
-import logo from "../../assest/img/logo.png";
+import motoCross from "../../assets/img/motocross.jpg";
+import logo from "../../assets/img/logo.png";
 import { useNavigate } from "react-router-dom";
 
 
