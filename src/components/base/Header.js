@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo1.png';
@@ -11,15 +10,10 @@ const menuItems = [
   { path: '/contacto', label: 'Contacto' }
 ];
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-
     <header className="bg-black p-4">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         
@@ -36,8 +30,7 @@ const Header = () => {
           </button>
         </div>
 
-
-        {/* Navegación menu*/}
+        {/* Navegación */}
         <nav className={`flex flex-col lg:flex-row w-full lg:w-auto mt-2 lg:mt-0 ${isOpen ? 'block' : 'hidden'} lg:block lg:space-x-4 space-y-2 lg:space-y-0`}>
           <ul className="flex flex-col lg:flex-row">
             {menuItems.map(item => (
@@ -47,17 +40,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-
-    <header className="bg-blue-500 p-4">
-      <div className="container mx-auto">
-        <h1 className="text-2xl font-semibold text-white">ElectroRiders</h1>
-        <nav className="mt-2">
-          <ul className="flex space-x-4">
-            <li><Link to="/" className="text-white hover:text-gray-300">Inicio</Link></li>
-            <li><Link to="/nosotros" className="text-white hover:text-gray-300">Nosotros</Link></li>
-            <li><Link to="/servicios" className="text-white hover:text-gray-300">Servicios</Link></li>
-            <li><Link to="/contacto" className="text-white hover:text-gray-300">Contacto</Link></li>  {/* Nota: Había un error tipográfico en "contato", lo corregí a "contacto" */}
-
           </ul>
         </nav>
       </div>
