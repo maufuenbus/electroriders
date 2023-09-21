@@ -30,7 +30,8 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Navegación */}
+
+        {/* Navegación menu*/}
         <nav className={`flex flex-col lg:flex-row w-full lg:w-auto mt-2 lg:mt-0 ${isOpen ? 'block' : 'hidden'} lg:block lg:space-x-4 space-y-2 lg:space-y-0`}>
           <ul className="flex flex-col lg:flex-row">
             {menuItems.map(item => (
