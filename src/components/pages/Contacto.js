@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 
+
 function Contacto() {
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,6 +23,7 @@ function Contacto() {
     e.preventDefault();
     console.log(formData);
   };
+
 
   return (
     <>
