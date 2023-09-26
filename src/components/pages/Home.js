@@ -18,7 +18,7 @@ function Home() {
 
         <div className="max-w-md">
 
-          <img src="{logoYellow}" alt="Logo" />
+          <img src={logoYellow} alt="Logo" />
           <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
           <p className="mb-5">Únete al cambio, convierte con nosotros un nuevo futuro</p>
           <button className="btn btn-primary">Cotizar</button>
