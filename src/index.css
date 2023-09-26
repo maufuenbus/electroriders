@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+*{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
-
 
 
 .menu-item {
@@ -20,4 +19,8 @@ body {
   height: 100%;
   /* border: solid 1px red; */
   justify-content: center;
+}
+
+.btn {
+  font-weight: bold;
 }

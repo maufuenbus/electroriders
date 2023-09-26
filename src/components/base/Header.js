@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/img/logo1.png';
+import logo from '../../assets/img/logoER-YB.png';
 import marco from '../../assets/img/marco.png';
 
 const menuItems = [
