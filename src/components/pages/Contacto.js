@@ -28,7 +28,7 @@ function Contacto() {
   return (
     <>
       <Header />
-      <div className="p-10 bg-black-100 flex">
+      <div className="p-10 bg-black-100 max-w-7xl mx-auto flex border-2 border-red-400">
         <div className="flex-1">
           {/*EN ESTE DIV VA EL CONTENIDO DE LA PAGINA*/}
         </div>
