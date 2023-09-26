@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className="bg-black p-4">
-        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center max-w-7xl">
           <div className="flex justify-between items-center w-full">
             <Link to="/">
                 <img className="logo h-16" src={logo} alt="Logo" />
