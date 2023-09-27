@@ -56,7 +56,7 @@ function Home() {
           <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl mx-auto">
             <figure><img src={logoYellow} alt="Album" style={{ width: '400px' }}/></figure>
             <div className="card-body">
-              <h2 className="card-title">New album is released!</h2>
+              <h2 className="card-title">Conversión Diesel a Eléctrico</h2>
               <p>Click the button to listen on Spotiwhy app.</p>
               <div className="card-actions justify-end">
                 {/* <button className="btn btn-primary">Listen</button> */}
