@@ -1,18 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 import motoCross from "../../assets/img/motocross.jpg";
 import motoCross2 from "../../assets/img/motocross2.jpg";
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
-
+import '../css/stylesHero.css';
 
 function Home() {
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
+  const [isButtonAbsolute, setIsButtonAbsolute] = useState(false);
+
+  const scrollToPresentation = () => {
+    const presentationElement = document.querySelector('.presentation');
+    presentationElement.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowScrollBtn(true);
+      } else {
+        setShowScrollBtn(false);
+      }
+  
+      const footerTop = document.querySelector('footer').getBoundingClientRect().top;
+      if (footerTop < window.innerHeight) {
+        setIsButtonAbsolute(true);
+      } else {
+        setIsButtonAbsolute(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+
   return (
     <>
-    <div>
-      <Header />
-    </div>
+    
 
 
     {/* INICIO HERO */}
@@ -39,10 +68,16 @@ function Home() {
       </div>
     </div>
     {/* FIN DEL HERO */}
+    <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToPresentation}>🡻</button>
+
+
 
     {/* INICIO PRESENTACIÓN EMPRESA */}
-
-    <div className='container max-w-7xl mx-auto border-2 border-slate-700'>
+    
+    <div className='container max-w-7xl mx-auto border-2 border-slate-700 presentation'>
+    <div>
+      <Header />
+    </div>
       <div className='py-20'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
@@ -103,6 +138,15 @@ function Home() {
 
     </div>
     {/* FIN PRESENTACION EMPRESA */}
+    {showScrollBtn && (
+      <button
+        className={`fixed ${isButtonAbsolute ? 'mb-64' : 'mb-4'}  right-4  rounded-full`}
+        onClick={scrollToPresentation}
+      >
+        🢁
+      </button>
+    )}
+
 
 
     <div>
