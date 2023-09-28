@@ -1,16 +1,17 @@
-.contenedor-logo{ /*vista telefono*/
+/* .contenedor-logo{ /*vista telefono*//*
   position: absolute;
   width: 100%;
   top: 50px;
   display: flex;
   justify-content: center;
-}
-
+} 
+*/
+/*
 .logo {
   width: 90%;  
   
 }
-
+/*
 @media (min-width: 768px) { 
   .contenedor-logo{
     position: absolute;

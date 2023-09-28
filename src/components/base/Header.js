@@ -28,7 +28,7 @@ const Header = () => {
   }, [isOpen]);
 
   return (
-    <header className="bg-black p-4">
+    <header className="bg-neutral-900 p-4">
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center max-w-7xl">
           <div className="flex justify-between items-center w-full">
             <Link to="/">
