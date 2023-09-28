@@ -1,20 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 import motoCross from "../../assets/img/motocross.jpg";
 import motoCross2 from "../../assets/img/motocross2.jpg";
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
-import '../css/stylesHero.css'
-
+import '../css/stylesHero.css';
 
 function Home() {
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
+  const [isButtonAbsolute, setIsButtonAbsolute] = useState(false);
 
-  const scrollToPresentation = (e) => {
-    e.preventDefault();
+  const scrollToPresentation = () => {
     const presentationElement = document.querySelector('.presentation');
     presentationElement.scrollIntoView({ behavior: 'smooth' });
-  }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowScrollBtn(true);
+      } else {
+        setShowScrollBtn(false);
+      }
+  
+      const footerTop = document.querySelector('footer').getBoundingClientRect().top;
+      if (footerTop < window.innerHeight) {
+        setIsButtonAbsolute(true);
+      } else {
+        setIsButtonAbsolute(false);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
 
   return (
@@ -116,6 +138,15 @@ function Home() {
 
     </div>
     {/* FIN PRESENTACION EMPRESA */}
+    {showScrollBtn && (
+      <button
+        className={`fixed ${isButtonAbsolute ? 'mb-64' : 'mb-4'}  right-4  rounded-full`}
+        onClick={scrollToPresentation}
+      >
+        🢁
+      </button>
+    )}
+
 
 
     <div>
