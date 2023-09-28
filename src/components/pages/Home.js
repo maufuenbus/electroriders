@@ -5,14 +5,21 @@ import motoCross from "../../assets/img/motocross.jpg";
 import motoCross2 from "../../assets/img/motocross2.jpg";
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
+import '../css/stylesHero.css'
 
 
 function Home() {
+
+  const scrollToPresentation = (e) => {
+    e.preventDefault();
+    const presentationElement = document.querySelector('.presentation');
+    presentationElement.scrollIntoView({ behavior: 'smooth' });
+  }
+  
+
   return (
     <>
-    <div>
-      <Header />
-    </div>
+    
 
 
     {/* INICIO HERO */}
@@ -39,10 +46,16 @@ function Home() {
       </div>
     </div>
     {/* FIN DEL HERO */}
+    <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToPresentation}>🡻</button>
+
+
 
     {/* INICIO PRESENTACIÓN EMPRESA */}
-
-    <div className='container max-w-7xl mx-auto border-2 border-slate-700'>
+    
+    <div className='container max-w-7xl mx-auto border-2 border-slate-700 presentation'>
+    <div>
+      <Header />
+    </div>
       <div className='py-20'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
