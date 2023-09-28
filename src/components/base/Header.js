@@ -45,7 +45,7 @@ const Header = () => {
             <ul className="flex flex-col lg:flex-row">
                 {menuItems.map(item => (
               <li key={item.label} className="mb-2 lg:mb-0 menu-item p-2" 
-                  style={(isOpen && window.innerWidth <= 768) ? {} : { backgroundImage: `url(${marco})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+                  style={(isOpen && window.innerWidth <= 1080) ? {} : { backgroundImage: `url(${marco})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
                   <Link to={item.path} className="text-white hover:text-gray-300 px-6 py-3">
                       {item.label}
                   </Link>
