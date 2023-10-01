@@ -6,6 +6,7 @@ import motoCross2 from "../../assets/img/motocross2.jpg";
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
 import '../css/stylesHero.css';
+import '../css/stylesHome.css';
 
 function Home() {
   const [showScrollBtn, setShowScrollBtn] = useState(false);
@@ -81,8 +82,8 @@ function Home() {
       <div className='py-20'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
-          <h1 className='text-center text-neutral-100 font-bold text-4xl pb-8'><span className='font-bold text-5xl'>Descubre</span> el futuro de la <span className='text-amarillo'>Electromovilidad</span></h1>
-          <p className='text-center max-w-lg mx-auto py-4 px-8 text-white text-base'> En ELECTRO RIDERS nos enorgullece ser pioneros en la transformación de la movilidad a través de soluciones sostenibles y eficientes.</p> 
+          <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'><span className='font-bold text-5xl'>Descubre</span> el futuro de la <span className='text-amarillo'>Electromovilidad</span></h1>
+          <p className='fade-in-from-bottom text-center max-w-lg mx-auto py-4 px-8 text-white text-base'> En ELECTRO RIDERS nos enorgullece ser pioneros en la transformación de la movilidad a través de soluciones sostenibles y eficientes.</p> 
           
           <p className='text-center max-w-lg mx-auto pb-16 px-6 text-neutral-100 text-base'>Nuestro compromiso es brindar una respuesta integral a las necesidades de aquellos que desean dar el paso hacia una movilidad más limpia y ecoamigable.
           </p>
@@ -121,11 +122,11 @@ function Home() {
 
         {/* SECCION VIDEO */}
         <div>
-          <h1 className='text-left px-6 text-neutral-100 font-bold text-4xl pb-8 pt-20 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
+          <h1 className='animate-slide-left text-left px-6 text-neutral-100 font-bold text-4xl pb-8 pt-20 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
           <div class="w-full max-w-4xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-3/4 mx-auto">
             <div class="iframe-container">
               <iframe
-                class="w-full h-full"
+                class="animate-slide-right w-full h-full"
                 src="https://www.youtube.com/embed/h7aS6cLVgVs?si=7u6tyV9Sa5KLSpgZ"
                 frameborder="0"
                 allowfullscreen

@@ -1,0 +1,60 @@
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (9/16 = 0.5625) */
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 0.5s ease-in-out;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%); /* Comienza desde la derecha */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Termina en su posición original */
+    opacity: 1;
+  }
+}
+
+/* Aplicando la animación a un elemento */
+.animate-slide-right {
+  animation: slide-right 1s ease-in-out;
+}
+
+@keyframes fade-in-from-bottom {
+  0% {
+    transform: translateY(10px); /* Comienza 10px más abajo */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Termina en su posición original */
+    opacity: 1;
+  }
+}
+
+/* Aplicando la animación a un párrafo */
+p {
+  animation: fade-in-from-bottom 1s ease-in-out;
+}
