@@ -1,3 +1,6 @@
+
+/* ESTILOS VIDEO YOUTUBE */
+
 .iframe-container {
   position: relative;
   padding-bottom: 56.25%; /* Proporción de aspecto 16:9 (9/16 = 0.5625) */
@@ -12,6 +15,8 @@
   height: 100%;
 }
 
+
+/* ANIMACIONES TEXTOS DE HOME */
 @keyframes slide-left {
   0% {
     transform: translateX(-100%);
@@ -59,29 +64,3 @@ p {
   animation: fade-in-from-bottom 1s ease-in-out;
 }
 
-.bg-responsive {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: 75%; /* Desplaza la imagen hacia la derecha */
-  background-position-y: center; /* Centra verticalmente */
-}
-
-@media (min-width: 768px) { /* breakpoint 'md' en Tailwind */
-  .bg-responsive {
-    background-size: cover; /* 100% de ancho y altura automática */
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-
-/* .bg-responsive {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-
-/* @media (min-width: 768px) { 
-  .bg-responsive {
-    background-size: 100% auto; 
-  }
-} */

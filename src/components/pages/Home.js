@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import '../css/stylesHero.css';
 import '../css/stylesHome.css';
 
+
 function Home() {
   const [showScrollBtn, setShowScrollBtn] = useState(false);
   const [isButtonAbsolute, setIsButtonAbsolute] = useState(false);
@@ -59,7 +60,7 @@ function Home() {
             <h3 className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
             {/* <p className="mb-5 font-bold"></p> */}
             <Link to="/contacto">
-              <button className="btn text-xl mt-20 border-0 text-black bg-amarillo hover:bg-white">Cotizar</button>
+              <button className="btn text-xl mt-20 border-0 text-black bg-amarillo hover:bg-white">Cotiza Aquí</button>
             </Link>
           </div>
 
