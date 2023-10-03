@@ -9,7 +9,7 @@ function Nosotros() {
       <Header />
     </div>
     <div className="navbar bg-base-100">
-      <a className="btn btn-ghost normal-case text-xl">nosotros</a>
+      <a className="btn btn-ghost normal-case text-xl">Nosotros</a>
     </div>
     <div>
       <Footer />

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
-import motoCross from "../../assets/img/motocross.jpg";
 import motoCross2 from "../../assets/img/motocross2.jpg";
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
@@ -42,11 +41,14 @@ function Home() {
 
   return (
     <>
+    <div>
+      <Header />
+    </div>
     
 
 
     {/* INICIO HERO */}
-    <div className="hero min-h-screen" style= {{backgroundImage: `url(${motoCross2})`}}>
+    <div className="hero min-h-screen bg-responsive" style= {{backgroundImage: `url(${motoCross2})`}}>
       <div className="hero-overlay bg-opacity-40"></div>
       <div className="hero-content text-center text-white"> 
 
@@ -54,10 +56,10 @@ function Home() {
 
           <div className="flex-1 ">
             <img src={logoYellow} alt="Logo" />
-            <h3 className="mb-5 text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
+            <h3 className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
             {/* <p className="mb-5 font-bold"></p> */}
             <Link to="/contacto">
-              <button className="btn text-xl border-0 text-black bg-amarillo hover:bg-white">Cotizar</button>
+              <button className="btn text-xl mt-20 border-0 text-black bg-amarillo hover:bg-white">Cotizar</button>
             </Link>
           </div>
 
@@ -76,9 +78,6 @@ function Home() {
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
     <div className='container max-w-7xl mx-auto border-2 border-slate-700 presentation'>
-    <div>
-      <Header />
-    </div>
       <div className='py-20'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
