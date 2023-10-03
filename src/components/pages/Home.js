@@ -123,10 +123,10 @@ function Home() {
         {/* SECCION VIDEO */}
         <div>
           <h1 className='animate-slide-left text-left px-6 text-neutral-100 font-bold text-4xl pb-8 pt-20 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
-          <div class="w-full max-w-4xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-3/4 mx-auto">
-            <div class="iframe-container">
+          <div className="w-full max-w-4xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-3/4 mx-auto">
+            <div className="iframe-container">
               <iframe
-                class="animate-slide-right w-full h-full"
+                className=" w-full h-full"
                 src="https://www.youtube.com/embed/h7aS6cLVgVs?si=7u6tyV9Sa5KLSpgZ"
                 frameborder="0"
                 allowfullscreen
