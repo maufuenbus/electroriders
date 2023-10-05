@@ -7,8 +7,8 @@ import '../css/stylesHeader.css';
 
 const menuItems = [
   { path: '/', label: 'Inicio' },
-  { path: '/nosotros', label: 'Nosotros' },
-  { path: '/servicios', label: 'Servicios' },
+  // { path: '/nosotros', label: 'Nosotros' },
+  // { path: '/servicios', label: 'Servicios' },
   { path: '/contacto', label: 'Contacto' }
 ];
 

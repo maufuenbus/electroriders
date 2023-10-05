@@ -80,7 +80,7 @@ function Home() {
 
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
-    <div className='container max-w-7xl mx-auto border-2 border-slate-700 presentation'>
+    <div className='container max-w-7xl mx-auto presentation'>
       <div className='py-20  border-slate-700'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
@@ -93,7 +93,7 @@ function Home() {
 
           {/* SECCION MOTO KXF */}
           <div className='py-20'>
-            <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl py-12'>KXF-E, la motocross enduro 100% eléctrica</h1>
+            <h1 className='animate-slide-left text-center text-neutral-100 font-bold text-4xl py-12'><span className='font-bold text-5xl text-amarillo'>KXF-E</span> , la motocross enduro <span>100% eléctrica</span></h1>
             {/* <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>hecha en Chile</h1> */}
                       
             <div className="max-w-4xl mx-auto sm:flex items-center">
@@ -103,7 +103,7 @@ function Home() {
               </div>
 
               <div className="sm:w-1/2 ">
-              <p className='text-center max-w-lg mx-auto py-4 px-8 text-white text-base'>Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustion a 100% electrica, única en Chile y Latinoamérica.</p>
+              <p className='text-center max-w-lg mx-auto py-4 px-8 text-white text-base'>Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustión a 100% eléctrica, única en Chile y Latinoamérica.</p>
               </div>
         
             </div>

@@ -45,7 +45,7 @@
 
 /* Aplicando la animación a un elemento */
 .animate-slide-right {
-  animation: slide-right 1s ease-in-out;
+  animation: slide-right 0.5s ease-in-out;
 }
 
 @keyframes fade-in-from-bottom {
