@@ -81,45 +81,43 @@ function Home() {
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
     <div className='container max-w-7xl mx-auto border-2 border-slate-700 presentation'>
-      <div className='py-20'>
+      <div className='py-20  border-slate-700'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
-          <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'><span className='font-bold text-5xl'>Descubre</span> el futuro de la <span className='text-amarillo'>Electromovilidad</span></h1>
+          <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pt-10'><span className='font-bold text-5xl'>Descubre</span> el futuro de la <span className='text-amarillo'>Electromovilidad</span></h1>
           <p className='fade-in-from-bottom text-center max-w-lg mx-auto py-4 px-8 text-white text-base'> En ELECTRO RIDERS nos enorgullece ser pioneros en la transformación de la movilidad a través de soluciones sostenibles y eficientes.</p> 
           
           <p className='text-center max-w-lg mx-auto pb-16 px-6 text-neutral-100 text-base'>Nuestro compromiso es brindar una respuesta integral a las necesidades de aquellos que desean dar el paso hacia una movilidad más limpia y ecoamigable.
           </p>
           {/*FIN SECCION ELECTROMOVILIDAD  */}
 
-          {/* SECCION MOTOCROSS */}
-          <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>KXF-E, la motocross enduro 100% eléctrica</h1>
-          {/* <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>hecha en Chile</h1> */}
-          <p className='fade-in-from-bottom text-center max-w-lg mx-auto py-4 px-8 text-white text-base'> Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustión a 100% eléctrica, única en Chile y Latinoamérica.</p> 
-          
-          
-          {/*FIN SECCION MOTOCROSS  */}
+          {/* SECCION MOTO KXF */}
+          <div className='py-20'>
+            <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl py-12'>KXF-E, la motocross enduro 100% eléctrica</h1>
+            {/* <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>hecha en Chile</h1> */}
+                      
+            <div className="max-w-4xl mx-auto sm:flex items-center">
 
-          {/*CARD 1 */}
-          <div className='px-4 py-4'>
-            <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl mx-auto">
-              <figure><img src={moto} alt="Album" style={{ width: '400px' }}/></figure>
-              <div className="card-body">
-                {/* <h2 className="card-title">Conversión Diesel a Eléctrico</h2> */}
-                <p>Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustion a 100% electrica, única en Chile y Latinoamérica.</p>
-                <div className="card-actions justify-end">
-                  {/* <button className="btn btn-primary">Listen</button> */}
-                </div>
+              <div className="sm:w-1/2">
+                <img src={moto} alt="Album" className="w-full md:w-200" />
               </div>
+
+              <div className="sm:w-1/2 ">
+              <p className='text-center max-w-lg mx-auto py-4 px-8 text-white text-base'>Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustion a 100% electrica, única en Chile y Latinoamérica.</p>
+              </div>
+        
             </div>
+
           </div>
-          {/* FIN CARD 1 */}
+          
+          {/*FIN SECCION MOTO KXF*/}
 
           
         </div>
 
         {/* SECCION VIDEO */}
-        <div>
-          <h1 className='animate-slide-left text-left px-6 text-neutral-100 font-bold text-4xl pb-8 pt-20 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
+        <div className='pt-22'>
+          <h1 className='animate-slide-left text-left px-6 text-neutral-100 font-bold text-4xl pb-8 pt-22 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
           <div className="w-full max-w-4xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-3/4 mx-auto">
             <div className="iframe-container">
               <iframe
