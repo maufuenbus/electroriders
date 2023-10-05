@@ -85,18 +85,18 @@ function Home() {
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
           <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pt-10'><span className='font-bold text-5xl'>Descubre</span> el futuro de la <span className='text-amarillo'>Electromovilidad</span></h1>
-          <p className='fade-in-from-bottom text-center max-w-lg mx-auto py-4 px-8 text-white text-base'> En ELECTRO RIDERS nos enorgullece ser pioneros en la transformación de la movilidad a través de soluciones sostenibles y eficientes.</p> 
+          <p className='fade-in-from-bottom text-center max-w-lg mx-auto py-8 px-8 text-white text-base'> En ELECTRO RIDERS nos enorgullece ser pioneros en la transformación de la movilidad a través de soluciones sostenibles y eficientes.</p> 
           
-          <p className='text-center max-w-lg mx-auto pb-16 px-6 text-neutral-100 text-base'>Nuestro compromiso es brindar una respuesta integral a las necesidades de aquellos que desean dar el paso hacia una movilidad más limpia y ecoamigable.
+          <p className='text-center max-w-lg mx-auto pb-8 px-6 text-neutral-100 text-base'>Nuestro compromiso es brindar una respuesta integral a las necesidades de aquellos que desean dar el paso hacia una movilidad más limpia y ecoamigable.
           </p>
           {/*FIN SECCION ELECTROMOVILIDAD  */}
 
           {/* SECCION MOTO KXF */}
-          <div className='py-20'>
-            <h1 className='animate-slide-left text-center text-neutral-100 font-bold text-4xl py-12'><span className='font-bold text-5xl text-amarillo'>KXF-E</span> , la motocross enduro <span>100% eléctrica</span></h1>
+          <div className='py-14'>
+            <h1 className='animate-slide-left text-center text-neutral-100 font-bold text-4xl py-10'><span className='font-bold text-5xl text-amarillo'>KXF-E</span> , la motocross enduro <span>100% eléctrica</span></h1>
             {/* <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>hecha en Chile</h1> */}
                       
-            <div className="max-w-4xl mx-auto sm:flex items-center">
+            <div className="max-w-4xl mx-auto sm:flex items-center pt-4">
 
               <div className="sm:w-1/2">
                 <img src={moto} alt="Album" className="w-full md:w-200" />
@@ -116,8 +116,8 @@ function Home() {
         </div>
 
         {/* SECCION VIDEO */}
-        <div className='pt-22'>
-          <h1 className='animate-slide-left text-left px-6 text-neutral-100 font-bold text-4xl pb-8 pt-22 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
+        <div className='pt-10'>
+          <h1 className='animate-slide-left text-left px-6 text-neutral-100 font-bold text-4xl pb-8 sm:text-center'><span className='font-bold text-5xl'>Únete</span> a la <span className='text-amarillo'>Revolución Eléctrica</span> sobre dos ruedas</h1>
           <div className="w-full max-w-4xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-3/4 mx-auto">
             <div className="iframe-container">
               <iframe
