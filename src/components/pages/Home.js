@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 import motoCross2 from "../../assets/img/motocross2.jpg";
+import moto from "../../assets/img/m.png";
+
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
 import '../css/stylesHero.css';
@@ -89,13 +91,21 @@ function Home() {
           </p>
           {/*FIN SECCION ELECTROMOVILIDAD  */}
 
+          {/* SECCION MOTOCROSS */}
+          <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>KXF-E, la motocross enduro 100% eléctrica</h1>
+          {/* <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>hecha en Chile</h1> */}
+          <p className='fade-in-from-bottom text-center max-w-lg mx-auto py-4 px-8 text-white text-base'> Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustión a 100% eléctrica, única en Chile y Latinoamérica.</p> 
+          
+          
+          {/*FIN SECCION MOTOCROSS  */}
+
           {/*CARD 1 */}
           <div className='px-4 py-4'>
             <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl mx-auto">
-              <figure><img src={logoYellow} alt="Album" style={{ width: '400px' }}/></figure>
+              <figure><img src={moto} alt="Album" style={{ width: '400px' }}/></figure>
               <div className="card-body">
-                <h2 className="card-title">Conversión Diesel a Eléctrico</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
+                {/* <h2 className="card-title">Conversión Diesel a Eléctrico</h2> */}
+                <p>Comprometidos por un deporte extremo amigable con el medioambiente, desarrollamos la KXF-E, la primera motocross enduro convertida de combustion a 100% electrica, única en Chile y Latinoamérica.</p>
                 <div className="card-actions justify-end">
                   {/* <button className="btn btn-primary">Listen</button> */}
                 </div>
@@ -104,20 +114,7 @@ function Home() {
           </div>
           {/* FIN CARD 1 */}
 
-          {/* CARD 2 */}
-          <div className='px-4 py-4'>
-            <div className="card lg:card-side bg-base-100 shadow-xl max-w-4xl mx-auto">
-              <figure><img src={logoYellow} alt="Album" style={{ width: '400px' }}/></figure>
-              <div className="card-body">
-                <h2 className="card-title">New album is released!</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
-                <div className="card-actions justify-end">
-                  {/* <button className="btn btn-primary">Listen</button> */}
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* FIN CARD 2 */}
+          
         </div>
 
         {/* SECCION VIDEO */}
