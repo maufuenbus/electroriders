@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 import motoCross2 from "../../assets/img/motocross2.jpg";
-import moto from "../../assets/img/m.png";
+import motoPng from "../../assets/img/m.png";
 
 import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
@@ -93,13 +93,13 @@ function Home() {
 
           {/* SECCION MOTO KXF */}
           <div className='py-14'>
-            <h1 className='animate-slide-left text-center text-neutral-100 font-bold text-4xl py-10'><span className='font-bold text-5xl text-amarillo'>KXF-E</span> , la motocross enduro <span>100% eléctrica</span></h1>
+            <h1 className='animate-slide-left text-center text-neutral-100 font-bold text-4xl py-10'><span className='font-bold text-5xl text-amarillo'>KXF-E</span>, la motocross enduro <span>100% eléctrica</span></h1>
             {/* <h1 className='animate-slide-right text-center text-neutral-100 font-bold text-4xl pb-8'>hecha en Chile</h1> */}
                       
             <div className="max-w-4xl mx-auto sm:flex items-center pt-4">
 
               <div className="sm:w-1/2">
-                <img src={moto} alt="Album" className="w-full md:w-200" />
+                <img src={motoPng} alt="Album" className="w-full md:w-200 hover:scale-105 transition-transform duration-300" />
               </div>
 
               <div className="sm:w-1/2 ">
