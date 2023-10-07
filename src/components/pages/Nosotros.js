@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
-
+import EnConstruccionImg from '../../assets/img/En-construccion.jpg';
 function Nosotros() {
   return (
     <>
@@ -9,7 +9,10 @@ function Nosotros() {
       <Header />
     </div>
     <div className="navbar bg-base-100">
-      <a className="btn btn-ghost normal-case text-xl">Nosotros</a>
+        <div className="flex justify-center"> {/* Centrar contenido horizontalmente */}
+            <img src={EnConstruccionImg} alt="En construcción" className="max-w-lg" /> 
+           
+        </div>
     </div>
     <div>
       <Footer />
