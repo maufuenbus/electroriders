@@ -1,0 +1,17 @@
+.image-position {
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.menu-item {
+  min-width: 150px;
+  min-height: 50px; 
+}
+
+.menu-item a {
+  display: flex;
+  width: 100%;
+  
+  justify-content: center;
+}
+
