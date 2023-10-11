@@ -3,53 +3,43 @@ import Header from '../base/Header';
 import Footer from '../base/Footer';
 
 function Contacto() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    const formData = {
+      name,
+      email,
+      message
+    };
 
     try {
-      const response = await fetch('http://localhost:3001/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      const data = await response.text();
-      console.log(data);
-      
-      if (response.status === 200) {
-        alert('Mensaje enviado exitosamente!');
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
+        const response = await fetch('https://www.electroriders.cl/send-email.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
         });
-      } else {
-        alert('Hubo un error al enviar el mensaje.');
-      }
 
+        const result = await response.json();
+        
+        if(result.status === "success") {
+            alert('Mensaje enviado con éxito.');
+            setName('');
+            setEmail('');
+            setMessage('');
+        } else {
+            alert('Hubo un error al enviar el mensaje.');
+        }
     } catch (error) {
-      console.error('Hubo un error al enviar el mensaje.', error);
-      alert('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo más tarde.');
+        alert('Error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
     }
-  };
+};
+
 
   return (
     <>
@@ -66,15 +56,39 @@ function Contacto() {
           <form className="bg-amarillo p-8 rounded-lg shadow-lg" onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-sm text-neutral-900 mb-2 font-bold" htmlFor="name">Nombre:</label>
-              <input type="text" name="name" id="name" placeholder="Escribe tu nombre" className="bg-neutral-900 w-full rounded-md p-2" value={formData.name} onChange={handleChange}/>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Escribe tu nombre" 
+                className="bg-neutral-900 w-full rounded-md p-2" 
+                value={name} 
+                onChange={e => setName(e.target.value)} 
+              />
             </div>
             <div className="mb-4">
               <label className="block text-sm mb-2 text-neutral-900 font-bold" htmlFor="email">Correo electrónico: </label>
-              <input type="email" name="email" id="email" placeholder="Escribe tu correo" className="bg-neutral-900 w-full rounded-md p-2" value={formData.email} onChange={handleChange} />
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="Escribe tu correo" 
+                className="bg-neutral-900 w-full rounded-md p-2" 
+                value={email} 
+                onChange={e => setEmail(e.target.value)} 
+              />
             </div>
             <div className="mb-4">
               <label className="block text-sm mb-2 text-neutral-900 font-bold" htmlFor="message"> Mensaje: </label>
-              <textarea name="message" id="message" rows="4" placeholder="Escribe tu mensaje" className="bg-neutral-900 w-full rounded-md p-2" value={formData.message} onChange={handleChange} ></textarea>
+              <textarea 
+                name="message" 
+                id="message" 
+                rows="4" 
+                placeholder="Escribe tu mensaje" 
+                className="bg-neutral-900 w-full rounded-md p-2" 
+                value={message} 
+                onChange={e => setMessage(e.target.value)} 
+              ></textarea>
             </div>
             <button type="submit" className="btn hover:bg-neutral-50 hover:text-neutral-900 w-full border-0"> Enviar </button>
           </form>
