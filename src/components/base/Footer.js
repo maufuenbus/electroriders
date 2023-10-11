@@ -17,7 +17,7 @@ const Footer = () => {
             <header className="footer-title text-negro opacity-90">Contáctanos</header> 
             <h1>Ariel Nicolás Echeverría</h1> 
             <h1>+56 984058436</h1> 
-            <a className="link link-hover">ariel.echeverria.12@sansano.usm.cl</a> 
+            <a className="link link-hover">contacto@electroriders.cl</a> 
           
           </nav> 
           <nav className='pl-10'>
