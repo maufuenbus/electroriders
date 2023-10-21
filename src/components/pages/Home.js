@@ -55,20 +55,11 @@ function Home() {
 
 
     {/* INICIO HERO */}
-    <div className="hero min-h-screen bg-responsive relative" style= {{backgroundImage: `url(${motoCross2})`}}>
-
-    
-
+    <div className="hero min-h-screen bg-responsive presentation relative" style= {{backgroundImage: `url(${motoCross2})`}}>
       <div className="hero-overlay bg-opacity-40"></div>
-
       <div className='header-absolute'><Header /></div>
-      
-      
       <div className="hero-content text-center text-white"> 
-        
-        
         <div className="max-w-7xl flex">
-
           <div className="flex-1 ">
             <img src={logoYellow} alt="Logo" />
             <h3 className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
@@ -100,7 +91,7 @@ function Home() {
 
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
-    <div className='container max-w-7xl mx-auto presentation'>
+    <div className='container max-w-7xl mx-auto next-section'>
       
       <div className='py-20  border-slate-700'>
 
