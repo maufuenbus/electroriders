@@ -14,9 +14,9 @@ function Home() {
   const [showScrollBtn, setShowScrollBtn] = useState(false);
   const [isButtonAbsolute, setIsButtonAbsolute] = useState(false);
 
-  const scrollToPresentation = () => {
-    const presentationElement = document.querySelector('.presentation');
-    presentationElement.scrollIntoView({ behavior: 'smooth' });
+  const scrollToNextSection = () => {
+    const nextSectionElement = document.querySelector('.next-section');
+    nextSectionElement.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -40,47 +40,41 @@ function Home() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
 
   return (
     <>
-    <div>
-      <Header />
-    </div>
-    
-
-
-    {/* INICIO HERO */}
-    <div className="hero min-h-screen bg-responsive" style= {{backgroundImage: `url(${motoCross2})`}}>
-      <div className="hero-overlay bg-opacity-40"></div>
-      <div className="hero-content text-center text-white"> 
-
-        <div className="max-w-7xl flex">
-
-          <div className="flex-1 ">
-            <img src={logoYellow} alt="Logo" />
-            <h3 className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
-            {/* <p className="mb-5 font-bold"></p> */}
-            <Link to="/contacto">
-              <button className="btn text-xl mt-20 border-0 text-black bg-amarillo hover:bg-white">Cotiza Aquí</button>
-            </Link>
+      {/* INICIO HERO */}
+      <div className="hero min-h-screen bg-responsive presentation" style={{backgroundImage: `url(${motoCross2})`}}>
+        <div className="hero-overlay bg-opacity-40"></div>
+        <div className="hero-content text-center text-white"> 
+          <div className="max-w-7xl flex">
+            <div className="flex-1">
+              <img src={logoYellow} alt="Logo" />
+              <h3 className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
+              <Link to="/contacto">
+                <button className="btn text-xl mt-20 border-0 text-black bg-amarillo hover:bg-white">Cotiza Aquí</button>
+              </Link>
+            </div>
+            <div className="flex-1">
+              {/* ESTE ES EL DIV DERECHO sin texto */}
+            </div>
           </div>
-
-          <div className="flex-1">
-            {/* ESTE ES EL DIV DERECHO sin texto */}
-          </div>
-        
         </div>
       </div>
-    </div>
-    {/* FIN DEL HERO */}
-    <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToPresentation}>🡻</button>
-
+      {/* FIN DEL HERO */}
+  
+        {/* Botón para bajar */}
+      <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToNextSection}>
+      <span className="material-icons">keyboard_double_arrow_down</span>
+      </button>
 
 
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
-    <div className='container max-w-7xl mx-auto presentation'>
+    <div className='container max-w-7xl mx-auto next-section'>
+      <div>
+        <Header />
+      </div>
       <div className='py-20  border-slate-700'>
         <div>
           {/* SECCION ELECTROMOVILIDAD */}
@@ -134,20 +128,27 @@ function Home() {
 
     </div>
     {/* FIN PRESENTACION EMPRESA */}
-    {showScrollBtn && (
-      <button
-        className={`fixed ${isButtonAbsolute ? 'mb-64' : 'mb-4'}  right-4  rounded-full`}
-        onClick={scrollToPresentation}
-      >
-        🢁
-      </button>
-    )}
-
-
-
     <div>
       <Footer />
-    </div>    
+    </div>  
+    {showScrollBtn && (
+        <button
+          style={{
+            position: isButtonAbsolute ? 'absolute' : 'fixed',
+            bottom: isButtonAbsolute ? '20px' : '10px',
+            right: '10px'
+          }}
+          className="rounded-full bg-amarillo text-white w-12 h-12 flex items-center justify-center"
+          onClick={scrollToNextSection}>
+          <span className="material-icons">keyboard_double_arrow_up</span>
+        </button>
+      )}
+
+
+
+
+
+      
     </>
   )
 }
