@@ -7,10 +7,9 @@ const Footer = () => {
       <div className="footer p-10 text-negro mx-auto max-w-7xl ">
         
           <nav className='pl-10'>
-            <header className="footer-title text-negro opacity-90">ElectroRiders</header> 
+            <header className="footer-title text-negro opacity-90"><Link to="/inicio" className="link link-hover">Electro Riders</Link></header> 
             <Link to="/nosotros" className="link link-hover">Nosotros</Link>
-            <Link to="/electromovilidad" className="link link-hover">Electromovilidad</Link>
-            <Link to="/prensa" className="link link-hover">Prensa</Link>
+            <Link to="/servicios" className="link link-hover">Servicios</Link>
             <Link to="/contacto" className="link link-hover">Contacto</Link>
           </nav> 
           <nav className='pl-10'>
@@ -36,7 +35,7 @@ const Footer = () => {
 
       <div className="footer footer-center p-4 bg-negro text-base-content">
         <aside>
-          <p>Electro Riders © {new Date().getFullYear()} Desarrollado por Oniria Lab</p>
+          <p>Electro Riders © {new Date().getFullYear()} Desarrollado por OniriaLab</p>
         </aside>
       </div>
 
