@@ -15,6 +15,9 @@
   height: 100%;
 }
 
+.material-icons{
+  color: black;
+}
 
 /* ANIMACIONES TEXTOS DE HOME */
 @keyframes slide-left {

@@ -61,6 +61,7 @@ function Contacto() {
                 name="name" 
                 id="name" 
                 placeholder="Escribe tu nombre" 
+                required
                 className="bg-neutral-900 w-full rounded-md p-2" 
                 value={name} 
                 onChange={e => setName(e.target.value)} 
@@ -73,6 +74,7 @@ function Contacto() {
                 name="email" 
                 id="email" 
                 placeholder="Escribe tu correo" 
+                required
                 className="bg-neutral-900 w-full rounded-md p-2" 
                 value={email} 
                 onChange={e => setEmail(e.target.value)} 
@@ -85,6 +87,7 @@ function Contacto() {
                 id="message" 
                 rows="4" 
                 placeholder="Escribe tu mensaje" 
+                required
                 className="bg-neutral-900 w-full rounded-md p-2" 
                 value={message} 
                 onChange={e => setMessage(e.target.value)} 
