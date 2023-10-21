@@ -16,9 +16,9 @@ function Home() {
   const [showScrollBtn, setShowScrollBtn] = useState(false);
   const [isButtonAbsolute, setIsButtonAbsolute] = useState(false);
 
-  const scrollToPresentation = () => {
-    const presentationElement = document.querySelector('.presentation');
-    presentationElement.scrollIntoView({ behavior: 'smooth' });
+  const scrollToNextSection = () => {
+    const nextSectionElement = document.querySelector('.next-section');
+    nextSectionElement.scrollIntoView({ behavior: 'smooth' });
   };
 
   useEffect(() => {
@@ -84,21 +84,17 @@ function Home() {
         
         </div>
       </div>
-
       <div class="custom-shape-divider-bottom-1697925045">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
           </svg>
+      </div>
     </div>
-      
-      
-
-    </div>
-
-   
-
     {/* FIN DEL HERO */}
-    <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToPresentation}>🡻</button>
+      {/* Botón para bajar */}
+      <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToNextSection}>
+      <span className="material-icons">keyboard_double_arrow_down</span>
+      </button>
 
 
 
@@ -161,20 +157,27 @@ function Home() {
 
     </div>
     {/* FIN PRESENTACION EMPRESA */}
-    {showScrollBtn && (
-      <button
-        className={`fixed ${isButtonAbsolute ? 'mb-64' : 'mb-4'}  right-4  rounded-full`}
-        onClick={scrollToPresentation}
-      >
-        🢁
-      </button>
-    )}
-
-
-
     <div>
       <Footer />
-    </div>    
+    </div>  
+    {showScrollBtn && (
+        <button
+          style={{
+            position: isButtonAbsolute ? 'absolute' : 'fixed',
+            bottom: isButtonAbsolute ? '20px' : '10px',
+            right: '10px'
+          }}
+          className="rounded-full bg-amarillo text-white w-12 h-12 flex items-center justify-center"
+          onClick={scrollToNextSection}>
+          <span className="material-icons">keyboard_double_arrow_up</span>
+        </button>
+      )}
+
+
+
+
+
+      
     </>
   )
 }
