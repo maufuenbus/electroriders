@@ -50,17 +50,23 @@ function Home() {
 
   return (
     <>
-    <div>
-      <Header />
-    </div>
+    
     
 
 
     {/* INICIO HERO */}
-    <div className="hero min-h-screen bg-responsive" style= {{backgroundImage: `url(${motoCross2})`}}>
-      <div className="hero-overlay bg-opacity-40"></div>
-      <div className="hero-content text-center text-white"> 
+    <div className="hero min-h-screen bg-responsive relative" style= {{backgroundImage: `url(${motoCross2})`}}>
 
+    
+
+      <div className="hero-overlay bg-opacity-40"></div>
+
+      <div className='header-absolute'><Header /></div>
+      
+      
+      <div className="hero-content text-center text-white"> 
+        
+        
         <div className="max-w-7xl flex">
 
           <div className="flex-1 ">
@@ -78,7 +84,19 @@ function Home() {
         
         </div>
       </div>
+
+      <div class="custom-shape-divider-bottom-1697925045">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+          </svg>
     </div>
+      
+      
+
+    </div>
+
+   
+
     {/* FIN DEL HERO */}
     <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToPresentation}>🡻</button>
 
@@ -87,7 +105,10 @@ function Home() {
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
     <div className='container max-w-7xl mx-auto presentation'>
+      
       <div className='py-20  border-slate-700'>
+
+        
         <div >
           {/* SECCION ELECTROMOVILIDAD */}
           <h1 className='text-center text-neutral-100 font-bold text-4xl pt-10' data-aos="fade-left"><span className='font-bold text-5xl'>Descubre</span> el futuro de la <span className='text-amarillo'>Electromovilidad</span></h1>
