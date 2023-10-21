@@ -1,0 +1,20 @@
+.link:hover {
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.footer-title:hover {
+  opacity: 100;
+  font-weight: bolder;
+  text-decoration-line: none;
+}
+
+.footer-title2 {
+  margin-bottom: 0.5rem/* 8px */;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+
+
