@@ -7,6 +7,7 @@ import logoYellow from "../../assets/img/logoER-YW.png";
 import { Link } from 'react-router-dom';
 import '../css/stylesHero.css';
 import '../css/stylesHome.css';
+//AOS (Animate On Scroll)
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -50,19 +51,15 @@ function Home() {
 
   return (
     <>
-    
-    
-
-
     {/* INICIO HERO */}
     <div className="hero min-h-screen bg-responsive presentation relative" style= {{backgroundImage: `url(${motoCross2})`}}>
       <div className="hero-overlay bg-opacity-40"></div>
-      <div className='header-absolute'><Header /></div>
+      <div className='header-absolute' ><Header /></div>
       <div className="hero-content text-center text-white"> 
         <div className="max-w-7xl flex">
           <div className="flex-1 ">
-            <img src={logoYellow} alt="Logo" />
-            <h3 className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
+            <img data-aos="zoom-in" src={logoYellow} alt="Logo" />
+            <h3 data-aos="fade-up" className="mb-5 text-xl md:text-3xl font-semibold text-neutral-100">La energía está en tus manos</h3>
             {/* <p className="mb-5 font-bold"></p> */}
             <Link to="/contacto">
               <button className="btn text-xl mt-20 border-0 text-black bg-amarillo hover:bg-white">Cotiza Aquí</button>

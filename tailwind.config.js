@@ -11,6 +11,7 @@ module.exports = {
         'negro': '#000100',
         'amarillo': '#FFFF00',
         'verde': '#44AA00',
+        'fondo': '#171717'
       },
     },
   },
