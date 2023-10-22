@@ -5,8 +5,17 @@ import '../css/stylesFooter.css';
 
 const Footer = () => {
   return (
-    <footer className='bg-amarillo'   >
-      <div className="footer p-10 text-negro mx-auto max-w-7xl ">
+    <footer className='bg-amarillo relative'   >
+
+<div class="custom-shape-divider-top-1698008434">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+</div>
+
+
+
+      <div className="footer px-10 py-16 text-negro mx-auto max-w-7xl ">
         
           <nav className='pl-10'>
             <header className="footer-title text-negro opacity-80"><Link to="/" className="">Electro Riders</Link></header> 

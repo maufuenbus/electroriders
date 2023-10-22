@@ -26,7 +26,7 @@ function Nosotros() {
       </div> */}
 
       {/* HISTORIA */}
-      <div className="p-10 bg-black-100 max-w-6xl mx-auto md:flex items-center gap-8 mt-20">
+      <div className="p-10 bg-black-100 max-w-6xl mx-auto md:flex items-center gap-8 mt-20 relative">
         {/* IMAGEN */}
         <div className="md:flex-2/5 border-red-600 border-solid pb-8 md:pb-0  ">
           <h1 className='text-center t-100 text-neutral-100 font-bold text-5xl pb-8' data-aos='fade-right'><span className='font-bold text-4xl'>Nuestra</span><span className='text-amarillo'> Historia</span></h1>
@@ -44,13 +44,20 @@ function Nosotros() {
           </div>
         </div>
         
+        
       </div>
 
       {/* MISION */}
 
       <div className='relative'>
+
+      <div class="custom-shape-divider-top-1698007712">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+    </svg>
+</div>
         
-        <div className="p-10 bg-black-100 max-w-4xl mx-auto md:flex items-center gap-8 ">
+        <div className="p-10 bg-black-100 max-w-4xl mx-auto md:flex items-center gap-8 md:pt-24">
 
           <div className="md:flex-1/3 mb-8  ">
           <h1 className='text-center text-neutral-100 font-bold text-5xl pt-10' data-aos="fade-left"><span className='font-bold text-4xl'>Nuestra</span><span className='text-amarillo'> Misión</span></h1>
@@ -73,7 +80,7 @@ function Nosotros() {
           <h1 className='text-center text-neutral-100 font-bold text-5xl pt-10' data-aos="fade-left"><span className='font-bold text-4xl'>Nuestra</span><span className='text-amarillo'> Visión</span></h1>
           </div>
 
-          <div className="flex-none md:w-2/3">
+          <div className="flex-none md:w-2/3 mb-10">
             <div className="border-amarillo border p-8 rounded-lg shadow-lg" data-aos="fade-up">
               <div>
                 {/* <p className='text-center max-w-lg mx-auto pb-8 px-6 text-neutral-200 text-xl' data-aos="fade-up">¡Hola! Mi nombre es Ariel Echeverría, y soy el fundador y CEO de ElectroRiders.</p> */}
@@ -83,6 +90,7 @@ function Nosotros() {
           </div>
         </div>
 
+        {/* divisor svg */}
         <div class="custom-shape-divider-bottom-1697953037">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" stroke="none" class="shape-fill"></path>
@@ -94,17 +102,17 @@ function Nosotros() {
 
       {/* VALORES */}
 
-      {/* <div className=' bg-amarillo relative h-10 border-amarillo border-2'></div> */}
 
       <div className='relative'>
 
+        {/* divisor svg */}
         {/* <div class="custom-shape-divider-top-1697950846">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" stroke="none" class="shape-fill"></path>
             </svg>
         </div> */}
 
-        <h1 className='text-center text-neutral-100 font-bold text-6xl pt-10' data-aos="fade-left"><span className='font-bold text-4xl'>Nuestros</span><span className='text-amarillo'> Valores</span></h1>
+        <h1 className='text-center text-neutral-100 font-bold text-5xl pt-24' data-aos="fade-left"><span className='font-bold text-4xl'>Nuestros</span><span className='text-amarillo'> Valores</span></h1>
 
         <div className="px-10 pb-12 bg-black-100 max-w-6xl mx-auto lg:flex items-center  gap-4">
 
