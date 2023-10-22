@@ -67,3 +67,34 @@ p {
   animation: fade-in-from-bottom 1s ease-in-out;
 }
 
+
+.custom-shape-divider-bottom-1697925045 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1697925045 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 36px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1697925045 .shape-fill {
+  fill: #171717;
+}
+
+.header-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* Agrega estilos adicionales según tus necesidades */
+}

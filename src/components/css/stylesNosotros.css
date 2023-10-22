@@ -1,0 +1,89 @@
+/* body{
+  background-color: #FFFF00;
+} */
+
+
+
+
+.custom-shape-divider-top-1697950846 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1697950846 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 48px;
+}
+
+.custom-shape-divider-top-1697950846 .shape-fill {
+  fill: #FFFF00;
+}
+
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1697953037 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1697953037 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 47px;
+}
+
+.custom-shape-divider-bottom-1697953037 .shape-fill {
+  fill: #FFFF00;
+}
+
+
+
+
+
+
+
+.custom-shape-divider-top-1698007712 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1698007712 svg {
+  position: relative;
+  display: block;
+  width: calc(107% + 1.3px);
+  height: 59px;
+}
+
+.custom-shape-divider-top-1698007712 .shape-fill {
+  fill: #FFFF00;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1698007712 svg {
+      width: calc(100% + 1.3px);
+      height: 30px;
+  }
+}

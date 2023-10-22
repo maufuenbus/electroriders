@@ -16,7 +16,7 @@ function Servicios() {
     <div>
       <Header />
     </div>
-    <div className="bg-black p-10 text-white">
+    <div className="bg-fondo p-10 text-white">
       <h2 className="text-3xl font-semibold mb-6 text-center text-amarillo">Nuestros Servicios</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {servicesList.map((service, index) => (

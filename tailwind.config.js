@@ -8,9 +8,10 @@ module.exports = {
     
     extend: {
       colors: {
-        'negro': '#000100',
+        'negro': '#171717',
         'amarillo': '#FFFF00',
         'verde': '#44AA00',
+        'fondo': '#171717'
       },
     },
   },
