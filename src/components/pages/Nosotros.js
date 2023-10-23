@@ -2,7 +2,12 @@ import React, { useEffect } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 import ariel from "../../assets/img/ariel.jpg";
-import adrenalina from "../../assets/img/adrenalina.jpg";
+import adrenalina2 from "../../assets/img/adrenalina2.jpg";
+import innovacion2 from "../../assets/img/innovacion2.jpg";
+import sostenibilidad from "../../assets/img/sostenibilidad.jpg";
+import personalizacion2 from "../../assets/img/personalizacion2.jpg";
+
+
 import '../css/stylesNosotros.css';
 
 
@@ -117,22 +122,22 @@ function Nosotros() {
         <div className="px-10 pb-12 bg-black-100 max-w-6xl mx-auto lg:flex items-center  gap-4">
 
           <div className='sm:flex gap-4 md:max-w-3xl md:mx-auto '>
-            <div className="sm:w-1/2 mb-8  ">
+            <div className="sm:w-1/2 mb-8   ">
               <h1 className='text-right lg:text-center text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Innovación</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg md:h-80 lg:h-72" data-aos="fade-up">
+              <div className="border-amarillo border rounded-lg shadow-lg " data-aos="fade-up">
                 <div>
-                  <img src={adrenalina} alt="Album" className="rounded-lg w-full md:w-200" data-aos="zoom-in" />
-                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg sm:px-8 lg:px-8' data-aos="fade-up">Impulsa nuestra creatividad</p>
+                  <img src={innovacion2} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
+                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg px-6 sm:px-8 md:px-20 lg:px-14' data-aos="fade-up">Impulsa nuestra creatividad</p>
                 </div>
               </div>
             </div>
 
             <div className="sm:w-1/2 mb-8  ">
               <h1 className='text-right lg:text-center text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Adrenalina</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg md:h-80 lg:h-72" data-aos="fade-up">
+              <div className="border-amarillo border rounded-lg shadow-lg  " data-aos="fade-up">
                 <div>
-                  <img src={adrenalina} alt="Album" className="rounded-lg w-full md:w-200" data-aos="zoom-in" />
-                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg sm:px-8 lg:px-8 ' data-aos="fade-up">Nos desafía a superar obstáculos</p>
+                  <img src={adrenalina2} alt="Album" className="rounded-lg w-full " data-aos="zoom-in" />
+                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg sm:px-8 md:px-20 lg:px-12 ' data-aos="fade-up">Nos desafía a superar obstáculos</p>
                 </div>
               </div>
             </div>
@@ -141,9 +146,9 @@ function Nosotros() {
           <div className='sm:flex gap-4 md:max-w-3xl md:mx-auto'>
             <div className="sm:w-1/2 mb-8  ">
               <h1 className='text-right lg:text-center text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Sostenibilidad</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg md:h-80 lg:h-72" data-aos="fade-up">
+              <div className="border-amarillo border rounded-lg shadow-lg " data-aos="fade-up">
                 <div>
-                  <img src={adrenalina} alt="Album" className="rounded-lg w-full md:w-200" data-aos="zoom-in" />
+                  <img src={sostenibilidad} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
                   <p className='text-center max-w-lg mx-auto py-6 px-2 text-neutral-200 text-lg sm:px-12  lg:px-8' data-aos="fade-up">Guía nuestro compromiso ambiental</p>
                 </div>
               </div>
@@ -151,9 +156,9 @@ function Nosotros() {
 
             <div className="sm:w-1/2 mb-8 ">
               <h1 className='text-right lg:text-center  text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Personalización</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg md:h-80 lg:h-72" data-aos="fade-up">
+              <div className="border-amarillo border rounded-lg shadow-lg  " data-aos="fade-up">
                 <div>
-                  <img src={adrenalina} alt="Album" className="rounded-lg w-full md:w-200" data-aos="zoom-in" />
+                  <img src={personalizacion2} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
                   <p className='text-center max-w-lg mx-auto py-6 px-1 text-neutral-200 text-lg' data-aos="fade-up">Nos adaptamos a las necesidades de nuestros clientes</p>
                 </div>
               </div>
