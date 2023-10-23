@@ -15,3 +15,15 @@
   justify-content: center;
 }
 
+
+
+.opaque-bg {
+  background-color: rgba(23, 23, 23, 0.7); /* Ajusta el valor de opacidad según tus preferencias */
+}
+
+
+
+.menu-open {
+  max-height: 500px; /* Establece la altura máxima deseada */
+  transition: max-height 0.3s ease; /* Ajusta la duración y el tipo de transición según tus preferencias */
+}

@@ -44,7 +44,7 @@ function Contacto() {
   return (
     <>
       <Header />
-      <div className="px-10 py-24 bg-black-100 max-w-4xl mx-auto mt-6 mb-16 sm:flex items-center ">
+      <div className="px-10 py-10 lg:py-24 bg-black-100 max-w-4xl mx-auto lg:mt-6 mb-16 sm:flex items-center ">
         <div className="sm:flex-1">
           <h1 className='animate-slide-left text-center px-6 text-neutral-100 font-bold text-4xl pb-8 pt-22 sm:text-center'>
             <span className='font-bold text-5xl'>¿Te interesa</span> saber más?

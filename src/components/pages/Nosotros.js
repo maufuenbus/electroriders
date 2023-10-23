@@ -31,7 +31,7 @@ function Nosotros() {
       </div> */}
 
       {/* HISTORIA */}
-      <div className="p-10 bg-black-100 max-w-6xl mx-auto md:flex items-center gap-8 mt-20 relative">
+      <div className="p-10 bg-black-100 max-w-6xl mx-auto md:flex items-center gap-8 lg:mt-20 relative">
         {/* IMAGEN */}
         <div className="md:flex-2/5 border-red-600 border-solid pb-8 md:pb-0  ">
           <h1 className='text-center t-100 text-neutral-100 font-bold text-5xl pb-8' data-aos='fade-right'><span className='font-bold text-4xl'>Nuestra</span><span className='text-amarillo'> Historia</span></h1>
