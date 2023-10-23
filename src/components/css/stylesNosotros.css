@@ -30,6 +30,21 @@
 
 
 
+.container-image {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* .imagen {
+
+  width: 250px;
+  height: auto;
+  object-position: bottom; 
+}
+
+ */
+
 
 
 
