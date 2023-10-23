@@ -30,7 +30,7 @@ const Header = () => {
   }, [isOpen]);
 
   return (
-    <header className="bg-transparent p-4">
+    <header className={`p-4 ${isOpen ? 'opaque-bg' : 'bg-transparent'}`}>
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center max-w-7xl">
           <div className="flex justify-between items-center w-full">
             <Link to="/">
@@ -48,7 +48,7 @@ const Header = () => {
                 {menuItems.map(item => (
               <li key={item.label} className="flex mb-2 lg:mb-0 menu-item image-position items-center" 
                   style={(isOpen && window.innerWidth <= 1080) ? {} : { backgroundImage: `url(${marco})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
-                  <Link to={item.path} className="text-white hover:text-gray-300" style={(isOpen && window.innerWidth <= 1080) ? { textAlign: 'center', alignItems: 'center'   } : {}}  >
+                  <Link to={item.path} className="text-white hover:text-amarillo" style={(isOpen && window.innerWidth <= 1080) ? { textAlign: 'center', alignItems: 'center'   } : {}}  >
                       {item.label}
                   </Link>
               </li>
