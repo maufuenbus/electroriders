@@ -98,3 +98,14 @@ p {
   z-index: 100;
   /* Agrega estilos adicionales según tus necesidades */
 }
+
+
+.sticky-menu {
+  position: fixed;
+  top: 0; /* Fijar en la parte superior */
+  left: 0;
+  width: 100%; /* Opcional: Asegúrate de que ocupe todo el ancho */
+  background-color: transparent; /* Cambia esto al color de fondo deseado */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  /* Agrega cualquier otro estilo que desees para el menú sticky */
+}

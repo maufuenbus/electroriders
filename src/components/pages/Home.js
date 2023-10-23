@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Header from '../base/Header';
 import Footer from '../base/Footer';
 import motoCross2 from "../../assets/img/motocross2.jpg";
@@ -16,6 +16,8 @@ import "aos/dist/aos.css";
 function Home() {
   const [showScrollBtn, setShowScrollBtn] = useState(false);
   const [isButtonAbsolute, setIsButtonAbsolute] = useState(false);
+  const menuRef = useRef(null);
+  const titleRef = useRef(null);
 
   const scrollToNextSection = () => {
     const nextSectionElement = document.querySelector('.next-section');
@@ -36,7 +38,20 @@ function Home() {
       } else {
         setIsButtonAbsolute(false);
       }
+      // Obtén las posiciones y tamaños de elementos de referencia
+      const menuRect = menuRef.current.getBoundingClientRect();
+      const titleRect = titleRef.current.getBoundingClientRect();
+
+      // Si el menú está arriba del título y no es sticky, hazlo sticky
+      if (menuRect.bottom < titleRect.top && !menuRef.current.classList.contains('sticky-menu')) {
+        menuRef.current.classList.add('sticky-menu');
+      }
+      // Si el menú está debajo del título y es sticky, quita el estilo sticky
+      else if (menuRect.bottom >= titleRect.top && menuRef.current.classList.contains('sticky-menu')) {
+        menuRef.current.classList.remove('sticky-menu');
+      }
     };
+
   
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -54,7 +69,7 @@ function Home() {
     {/* INICIO HERO */}
     <div className="hero min-h-screen bg-responsive presentation relative" style= {{backgroundImage: `url(${motoCross2})`}}>
       <div className="hero-overlay bg-opacity-40"></div>
-      <div className='header-absolute' ><Header /></div>
+      {/* <div className='header-absolute' ><Header /></div> */}
       <div className="hero-content text-center text-white"> 
         <div className="max-w-7xl flex">
           <div className="flex-1 ">
@@ -79,6 +94,12 @@ function Home() {
       </div>
     </div>
     {/* FIN DEL HERO */}
+
+    {/* Menú que se vuelve sticky */}
+    <div ref={menuRef} className="sticky-menu">
+        <Header />
+    </div>
+
       {/* Botón para bajar */}
       <button className="scroll-down-btn bounce btn btn-glass text-3xl p-5" onClick={scrollToNextSection}>
       <span className="material-icons">keyboard_double_arrow_down</span>
@@ -88,7 +109,7 @@ function Home() {
 
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
-    <div className='container max-w-7xl mx-auto next-section'>
+    <div ref={titleRef} className='container max-w-7xl mx-auto next-section'>
       
       <div className='py-20  border-slate-700'>
 
