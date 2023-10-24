@@ -46,8 +46,8 @@ function Contacto() {
   return (
     <>
       <Header />
-      <div className="px-10 py-10 lg:py-18 bg-black-100 max-w-4xl mx-auto lg:mt-6 mb-10 sm:flex items-center ">
-        <div className="sm:flex-1/2 w-full h-screen bg-cover bg-center bg-no-repeat relative"
+      <div className="px-10 pt-4 lg:py-18 bg-black-100 max-w-4xl mx-auto lg:mt-6 mb-10 sm:flex items-center " >
+        <div className="sm:flex-1/2 w-full h-screen bg-cover bg-center bg-no-repeat relative" data-aos="fade-up"
           style={{
             backgroundImage: `url(${collage})`,
             backgroundSize: 'contain',
@@ -55,8 +55,8 @@ function Contacto() {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <div className="flex flex-col justify-center items-center h-full relative z-10">
-            <h1 className="text-center px-6 text-neutral-100 font-bold text-4xl pb-8 sm:text-center"
+          <div className="flex flex-col justify-center items-center h-full relative z-10" data-aos="fade-right">
+            <h1 className="text-center px-6 text-neutral-100 font-bold text-4xl pb-8 sm:text-center" 
               style={{
                 background: 'rgba(23, 23, 23, 0.5)', // Añade un fondo semitransparente
                 padding: '20px', // Agrega un poco de espacio alrededor del texto
@@ -69,7 +69,7 @@ function Contacto() {
           </div>
         </div>
         
-        <div className="flex-none sm:w-1/2">
+        <div className="flex-none sm:w-1/2 pt-6" data-aos="fade-left">
           <form className="bg-amarillo p-8 rounded-lg shadow-lg" onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-sm text-neutral-900 mb-2 font-bold" htmlFor="name">Nombre:</label>
