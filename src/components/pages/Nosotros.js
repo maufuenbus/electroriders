@@ -127,7 +127,7 @@ function Nosotros() {
               <div className="border-amarillo border rounded-lg shadow-lg " data-aos="fade-up">
                 <div>
                   <img src={innovacion2} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
-                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg px-6 sm:px-8 md:px-20 lg:px-14' data-aos="fade-up">Impulsa nuestra creatividad</p>
+                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg px-6 sm:px-8 md:px-20 lg:px-14' data-aos="fade-down">Impulsa nuestra creatividad</p>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@ function Nosotros() {
               <div className="border-amarillo border rounded-lg shadow-lg  " data-aos="fade-up">
                 <div>
                   <img src={adrenalina2} alt="Album" className="rounded-lg w-full " data-aos="zoom-in" />
-                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg sm:px-8 md:px-20 lg:px-12 ' data-aos="fade-up">Nos desafía a superar obstáculos</p>
+                  <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg sm:px-8 md:px-20 lg:px-12 ' data-aos="fade-down">Nos desafía a superar obstáculos</p>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ function Nosotros() {
               <div className="border-amarillo border rounded-lg shadow-lg " data-aos="fade-up">
                 <div>
                   <img src={sostenibilidad} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
-                  <p className='text-center max-w-lg mx-auto py-6 px-2 text-neutral-200 text-lg sm:px-12  lg:px-8' data-aos="fade-up">Guía nuestro compromiso ambiental</p>
+                  <p className='text-center max-w-lg mx-auto py-6 px-2 text-neutral-200 text-lg sm:px-12  lg:px-8' data-aos="fade-down">Guía nuestro compromiso ambiental</p>
                 </div>
               </div>
             </div>
@@ -159,7 +159,7 @@ function Nosotros() {
               <div className="border-amarillo border rounded-lg shadow-lg  " data-aos="fade-up">
                 <div>
                   <img src={personalizacion2} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
-                  <p className='text-center max-w-lg mx-auto py-6 px-1 text-neutral-200 text-lg' data-aos="fade-up">Nos adaptamos a las necesidades de nuestros clientes</p>
+                  <p className='text-center max-w-lg mx-auto py-6 px-1 text-neutral-200 text-lg' data-aos="fade-down">Nos adaptamos a las necesidades de nuestros clientes</p>
                 </div>
               </div>
             </div>
