@@ -97,3 +97,17 @@ p {
   right: 0;
   z-index: 100;
 } */
+
+
+
+.image-container {
+  min-height: 100vh; /* Establece una altura mínima del 100% de la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-height: 100%; /* Establece una altura máxima del 100% de la altura del contenedor */
+  width: 100%; /* Permite que el ancho de la imagen se ajuste automáticamente */
+}
