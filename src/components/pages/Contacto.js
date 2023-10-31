@@ -46,8 +46,8 @@ function Contacto() {
   return (
     <>
       <Header />
-      <div className="px-10 pt-4 lg:py-18 bg-black-100 max-w-4xl mx-auto lg:mt-6 mb-10 sm:flex items-center " >
-        <div className="sm:flex-1/2 w-full h-screen bg-cover bg-center bg-no-repeat relative" data-aos="fade-up"
+      <div className="px-6 pb-6 md:pb-2 xl:pb-0 bg-black-100 max-w-4xl 2xl:max-w-5xl  mx-auto md:flex items-center " >
+        <div className="px-2 md:flex-1/2 w-full h-[100vh] bg-cover bg-center bg-no-repeat relative" data-aos="fade-up"
           style={{
             backgroundImage: `url(${collage})`,
             backgroundSize: 'contain',
@@ -55,22 +55,22 @@ function Contacto() {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <div className="flex flex-col justify-center items-center h-full relative z-10" data-aos="fade-right">
-            <h1 className="text-center px-6 text-neutral-100 font-bold text-4xl pb-8 sm:text-center" 
+          <div className="flex flex-col justify-center items-center relative z-10 image-container" data-aos="fade-right">
+            <h1 className="text-center px-6 text-neutral-100 font-bold text-4xl sm:text-center" 
               style={{
                 background: 'rgba(23, 23, 23, 0.5)', // Añade un fondo semitransparente
                 padding: '20px', // Agrega un poco de espacio alrededor del texto
                 borderRadius: '10px', // Agrega bordes redondeados al fondo
               }}
             >
-              <span className="font-bold text-5xl">¿Te interesa</span> saber más?
+              <span className="font-bold text-5xl">¿Te interesa</span><br /> saber más?<br />
               <span className="text-amarillo">¡Contáctanos!</span>
             </h1>
           </div>
         </div>
         
-        <div className="flex-none sm:w-1/2 pt-6" data-aos="fade-left">
-          <form className="bg-amarillo p-8 rounded-lg shadow-lg" onSubmit={handleSubmit}>
+        <div className="flex-none md:w-1/2 pt-6 px-2 " data-aos="fade-left">
+          <form className="bg-amarillo p-8 rounded-lg shadow-lg max-w-md mx-auto " onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-sm text-neutral-900 mb-2 font-bold" htmlFor="name">Nombre:</label>
               <input 
