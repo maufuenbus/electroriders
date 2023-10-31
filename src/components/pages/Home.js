@@ -54,7 +54,7 @@ function Home() {
     {/* INICIO HERO */}
     <div className="hero min-h-screen bg-responsive presentation relative" style= {{backgroundImage: `url(${motoCross2})`}}>
       <div className="hero-overlay bg-opacity-40"></div>
-      <div className='header-absolute' ><Header /></div>
+      
       <div className="hero-content text-center text-white"> 
         <div className="max-w-7xl flex">
           <div className="flex-1 ">
@@ -85,10 +85,12 @@ function Home() {
       </button>
 
 
-
     {/* INICIO PRESENTACIÓN EMPRESA */}
     
     <div className='container max-w-7xl mx-auto next-section'>
+
+      <div><Header /></div>
+
       
       <div className='py-20  border-slate-700'>
 
