@@ -28,7 +28,7 @@ function Servicios() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {servicesList.map((service, index) => (
-          <div key={index} className="p-6 bg-neutral-800 rounded-lg shadow-lg border-amarillo border">
+          <div key={index} className="p-6 bg-neutral-800 rounded-lg shadow-lg border-verde border">
             <h3 className="text-xl font-bold mb-4 text-amarillo text-center">{service.title}</h3>
             <img src={service.imagen} alt="Album" className="rounded-lg w-72 mx-auto mb-6" data-aos="zoom-in" />
 
