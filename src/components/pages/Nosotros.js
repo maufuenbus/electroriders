@@ -39,7 +39,7 @@ function Nosotros() {
         </div>
         
         <div className="flex-none md:w-3/5">
-          <div className="border-amarillo border p-8 rounded-lg shadow-lg" data-aos="fade-up">
+          <div className="border-verde border p-8 rounded-lg shadow-lg" data-aos="fade-up">
             <div className="mb-4">
               <p className='text-center max-w-lg mx-auto pt-6 pb-12 text-neutral-200 text-xl' data-aos="fade-up">¡Hola! Mi nombre es Ariel Echeverría, <br /> y soy el fundador y CEO de <span className='text-amarillo'> Electro Riders</span>.</p>
               <p className='text-center max-w-lg mx-auto pb-8 text-neutral-200 text-lg' data-aos="fade-up">Desde que era un niño, siempre fui un apasionado de las motos. Pero con el tiempo, empecé a notar un problema importante: la contaminación acústica y ambiental causada por las motos enduro y vehículos de combustión. Este descubrimiento me llevó a adentrarme en el mundo de la <span className='text-amarillo'>Electromovilidad</span>, decidí tomar acción y me atreví a derrocar mitos.</p>
@@ -69,7 +69,7 @@ function Nosotros() {
           </div>
 
           <div className="flex-none md:w-2/3">
-            <div className="border-amarillo border p-8 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="border-verde border p-8 rounded-lg shadow-lg" data-aos="fade-up">
               <div>
                 {/* <p className='text-center max-w-lg mx-auto pb-8 px-6 text-neutral-200 text-xl' data-aos="fade-up">¡Hola! Mi nombre es Ariel Echeverría, y soy el fundador y CEO de ElectroRiders.</p> */}
                 <p className='text-center max-w-lg mx-auto px-4 text-neutral-100 text-lg' data-aos="fade-up">En ElectroRiders, nuestra misión es revolucionar el mundo del deporte extremo, llevando la Electromovilidad a nuevos límites, combinando adrenalina y sostenibilidad en cada aventura.</p>
@@ -86,7 +86,7 @@ function Nosotros() {
           </div>
 
           <div className="flex-none md:w-2/3 mb-10">
-            <div className="border-amarillo border p-8 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="border-verde border p-8 rounded-lg shadow-lg" data-aos="fade-up">
               <div>
                 {/* <p className='text-center max-w-lg mx-auto pb-8 px-6 text-neutral-200 text-xl' data-aos="fade-up">¡Hola! Mi nombre es Ariel Echeverría, y soy el fundador y CEO de ElectroRiders.</p> */}
                 <p className='text-center max-w-lg mx-auto px-0 text-neutral-100 text-lg' data-aos="fade-up">Queremos ser la referencia mundial en Electromovilidad extrema, inspirando pasión y sostenibilidad en cada competición y salto, allanando el camino hacia un futuro más limpio y emocionante.</p>
@@ -124,7 +124,7 @@ function Nosotros() {
           <div className='sm:flex gap-4 md:max-w-3xl md:mx-auto '>
             <div className="sm:w-1/2 mb-8   ">
               <h1 className='text-right lg:text-center text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Innovación</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg " data-aos="fade-up">
+              <div className="border-verde border rounded-lg shadow-lg " data-aos="fade-up">
                 <div>
                   <img src={innovacion2} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
                   <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg px-6 sm:px-8 md:px-20 lg:px-14' data-aos="fade-down">Impulsa nuestra creatividad</p>
@@ -134,7 +134,7 @@ function Nosotros() {
 
             <div className="sm:w-1/2 mb-8  ">
               <h1 className='text-right lg:text-center text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Adrenalina</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg  " data-aos="fade-up">
+              <div className="border-verde border rounded-lg shadow-lg  " data-aos="fade-up">
                 <div>
                   <img src={adrenalina2} alt="Album" className="rounded-lg w-full " data-aos="zoom-in" />
                   <p className='text-center max-w-lg mx-auto py-6 text-neutral-200 text-lg sm:px-8 md:px-20 lg:px-12 ' data-aos="fade-down">Nos desafía a superar obstáculos</p>
@@ -146,7 +146,7 @@ function Nosotros() {
           <div className='sm:flex gap-4 md:max-w-3xl md:mx-auto'>
             <div className="sm:w-1/2 mb-8  ">
               <h1 className='text-right lg:text-center text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Sostenibilidad</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg " data-aos="fade-up">
+              <div className="border-verde border rounded-lg shadow-lg " data-aos="fade-up">
                 <div>
                   <img src={sostenibilidad} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
                   <p className='text-center max-w-lg mx-auto py-6 px-2 text-neutral-200 text-lg sm:px-12  lg:px-8' data-aos="fade-down">Guía nuestro compromiso ambiental</p>
@@ -156,7 +156,7 @@ function Nosotros() {
 
             <div className="sm:w-1/2 mb-8 ">
               <h1 className='text-right lg:text-center  text-neutral-100 font-bold text-3xl pt-10' data-aos="fade-left">Personalización</h1>
-              <div className="border-amarillo border rounded-lg shadow-lg  " data-aos="fade-up">
+              <div className="border-verde border rounded-lg shadow-lg  " data-aos="fade-up">
                 <div>
                   <img src={personalizacion2} alt="Album" className="rounded-lg w-full" data-aos="zoom-in" />
                   <p className='text-center max-w-lg mx-auto py-6 px-1 text-neutral-200 text-lg' data-aos="fade-down">Nos adaptamos a las necesidades de nuestros clientes</p>
